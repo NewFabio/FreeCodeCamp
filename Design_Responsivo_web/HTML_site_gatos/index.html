@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <!-- <section></section> usado para definir seções em um documento, capítulos, cabeçalhos, rodapés ou quaisquer outras seções  -->
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos --> <!-- O elemento <a></a> usado apara fazer ligação com outra página, tambem pode usar para destacar apenas uma palavra ou palavras criando um link, o atributo TARGET faz o link abrir em uma nova aba -->
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+            <!-- Elemento <img> n tem fechamento, usa src para indicar local da imagem e alt para mostrar ao usuario do que se trata a foto caso n carregue, pode-se usar o elemento <a> para transforma a imagem em um link -->
+            <a href="https://freecatphotoapp.com">
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"></a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <!-- <ul></ul> usado para criar uma lista não ordenada, <li></li> usado para criar um item dentro da lista ordenada ou não -->
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <!-- O elemento <figure></figure> representa um conteúdo auto-contido e permitirá que você associe uma imagem com uma legenda. -->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+                <!-- O elemento de legenda da figura (figcaption) é usado para adicionar uma descrição à imagem no elemento figure. -->
+                <figcaption>Cats <em>love</em> lasagna</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <!-- O código de uma lista ordenada (ol) é semelhante ao de uma lista não ordenada, mas a lista de itens em uma lista ordenada é numerada quando eles são exibidos. -->
+            <ol>
+                <li>flea treatmente</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field">
+                <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <!-- O elemento <form></form> usado cara captar dados do usuário, nome, idade, e-mail, etc.. O atributo ACTION indica o destino dos dados do formulário. -->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- Você pode usar botões de opção para perguntas onde você queira que o usuário dê apenas uma resposta entre várias opções. -->
+                <!-- Os elementos label são usados para ajudar a associar o texto de um elemento input com o próprio elemento input (especialmente para tecnologias assistivas como leitores de tela). -->
+                <!-- O atributo id é usado para identificar elementos HTML específicos. O valor de cada atributo id deve ser único em comparação aos outros valores de id para a página inteira. -->
+                <fieldset>
+                    <!-- O elemento legend atua como uma legenda para o conteúdo do elemento fieldset. Ele dá aos usuários um contexto sobre o que devem inserir nessa parte do formulário. -->
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!-- O elemento fieldset é usado para agrupar entradas (inputs) e rótulos (labels) relacionados em um formulário da web. Os elementos fieldset são elementos de nível de bloco, o que significa que eles aparecem em uma nova linha. -->
+                    <label for="indoor"><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+                    <!-- O atributo NAME não deixa que as opções sejam marcadas simultaneamente -->
+                    <!-- Se você selecionar o botão de opção Indoor e enviar o formulário, os dados de formulário para o botão são baseados em seus atributos name e value. Como seus botões de opção não têm um atributo value, os dados do formulário incluirão indoor-outdoor=on, o que não é útil quando você tem vários botões. -->
+                    <label for="outdoor"><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <!-- Os formulários normalmente usam caixas de seleção para perguntas que tenham mais de uma resposta. O elemento input com um atributo type definido como checkbox cria uma caixa de seleção. -->
+                    <!-- Existe outra maneira de associar o texto de um elemento input com o elemento em si. Você pode colocar o texto dentro de um elemento label e adicionar um atributo for com o mesmo valor que o atributo id do elemento input. -->
+                    <label for="loving"><input type="checkbox" id="loving" name="personality" value="loving" checked>Loving</label> <!--Para que uma caixa de seleção ou botão de opção esteja selecionado por padrão, você precisa adicionar o atributo checked ao elemento.-->
+                    <label for="lazy"><input type="checkbox" id="lazy" name="personality" value="lazy">Lazy</label>
+                    <label for="energetic"><input type="checkbox" id="energetic" name="personality" value="energetic">Energetic</label>
+                </fieldset>
+                <!-- O elemento input permite a você várias maneiras de coletar dados a partir de um formulário da web. Assim como os elementos img, os elementos input são de elementos nulos e não precisam de tags de fechamento. -->
+                <!-- Existem muitos tipos de entradas (inputs) que você pode criar usando o atributo type. Você pode criar facilmente um campo de senha, um botão de redefinição ou um controle para permitir que os usuários selecionem um arquivo armazenado no computador. -->
+                <!-- Para que os dados de um formulário sejam acessados pelo local especificado no atributo action, você deve dar ao campo de texto um atributo name e atribuir a ele um valor que represente os dados que estão sendo enviados. -->
+                <!-- O texto de placeholder é usado para dar às pessoas uma dica sobre o tipo de informação que deve ser inserido em uma entrada (input). -->
+                <!-- Para evitar que um usuário envie o formulário quando as informações necessárias estiverem faltando, você precisa adicionar o atributo required a um elemento input. Não há a necessidade de definir um valor para o atributo required. -->
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.menu p {
+    font-style: italic;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+/* pode usar a medida px para estilizar ou % em relação à ocupação total da body */
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+/* Se você tornar a largura da visualização da página menor, você notará, em algum ponto, que parte do texto à esquerda começa a quebrar para a próxima linha. Isso ocorre porque a largura dos elementos p do lado esquerdo só pode ocupar 50% do espaço.
+
+Uma vez que você sabe que os valores à direita têm significativamente menos caracteres, altere o valor width da classe flavor para 75% e a width da classe price para 25%. */
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/*FOOTER*/
+
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+/* quando o site for visitado mudará de cor */
+a:visited {
+    color: black;
+}
+/* faz o link mudar de cor quando passar o mouse por cima */
+a:hover {
+    color: brown;
+}
+/* faz o link mudar de cor quando for clicado */
+a:active {
+    color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
+}
