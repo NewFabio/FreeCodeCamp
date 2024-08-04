@@ -1,0 +1,102 @@
+@import url(https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900);
+body {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    width: 90vw;
+    height: 100vh;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#survey-form {
+    background-color: rgba(66, 74, 112, 0.5);
+    margin: 0 auto;
+    max-width: 450px;
+    min-width: 300px;
+    font-size: 19px;
+}
+
+fieldset {
+    border: none;
+    padding: 2em 0 2em 0;
+}
+
+#campos {
+    text-align: center;
+}
+
+textarea, select {
+    margin: 10px 18px;
+    width: 90%;
+    min-height: 2em;
+}
+
+textarea {
+    height: 15em;
+}
+
+input, textarea, select {
+    background-color: rgb(66, 74, 112);
+    border: 1px solid rgb(66, 74, 112);
+    color: #ffffff;
+}
+
+#name, #email, #number {
+    display: block;
+    margin: 10px 18px;
+    width: 90%;
+    min-height: 2em;
+}
+
+#number {
+    margin-bottom: -25px;
+}
+
+#drop {
+    text-align: center;
+}
+
+
+#sim-nao legend {
+    display: block;
+    text-align: center;
+}
+
+#check label {
+    display: block;
+    font: 18px;
+    width: unset;
+    margin: 0 0.5em 0 0;
+}
+
+#check label input {
+    float: left;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.coment {
+    text-align: center;
+}
+
+#submit {
+    border: 1px solid rgb(66, 74, 112);
+    background-color: rgb(66, 74, 112, 05);
+    border-radius: 50px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    width: 90%;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(42, 64, 179);
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}

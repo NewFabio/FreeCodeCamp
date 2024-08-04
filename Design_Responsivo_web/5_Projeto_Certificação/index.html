@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>New-Code</title>
+</head>
+<body>
+    <h1 id="title">Formulário de pesquisa da New-Code</h1>
+    <p id="description">Obrigador por reserva um tempo para nos ajudar a melhorar</p>
+    <form action="fabio.conceicaoads@gmail.com" method="post" id="survey-form">
+        <div id="campos">
+            <fieldset>
+                <label for="name" name="name" id="name-label">Nome <input type="text" id="name" name="name" required placeholder="Seu nome"></label>
+                <label for="emal" name="email" id="email-label">Email <input type="email" id="email" name="email" required placeholder="Seu Email"></label>
+                <label for="number" name="number" id="number-label">Idade (opcional) <input type="number" id="number" name="number" min="15" max="120" placeholder="Sua Idade"></label>
+            </fieldset>
+        </div>
+        <div id="drop">
+            <fieldset>
+                <label for="dropdown" name="dropdown">Qual seu vínculo com a New-Code atualmente? 
+                    <select id="dropdown">
+                        <option value="0" name="opcao0">Selecione uma opção</option>
+                        <option value="1" name="opcao1">Agregado</option>
+                        <option value="2" name="opcao2">Empregado</option>
+                        <option value="3" name="opcao3">Cliente</option>
+                    </select>
+                </label>
+            </fieldset>
+        </div>
+        <div id="sim-nao">
+            <fieldset>
+                <legend>Você recomendaria a New-Code</legend>
+                <label for="sim" name="sim"><input type="radio" name="sim" id="sim" class="inliner" checked value="0"> Sim</label>
+                <label for="nao" name="sim"><input type="radio" name="sim" id="nao" class="inliner" value="1"> Não</label>
+                <label for="talves" name="sim"><input type="radio" name="sim" id="talves" class="inliner" value="2"> Talves</label>            
+            </fieldset>
+        </div>
+        <div id="check">
+            <fieldset>
+                <legend>Qual tipo de melhoria gostaria de ver? (Marque quantas opções quiser)</legend>
+                <label for="atendimento" name="atendimento">Atendimento <input type="checkbox" class="inline" id="atendimento" name="atendimento" value="0"></label>
+                <label for="estrutura-recepção" name="estrutura-recepção">Estrutura da sala de recepção <input type="checkbox" class="inline" id="estrutura-recepção" name="estrutura-recepção" value="1"></label>
+                <label for="sala-descanco" name="sala-descanco">Sala de descanço <input type="checkbox" class="inline" id="sala-descanco" name="sala-descanco" value="2"></label>
+                <label for="local-trabalho0" name="local-trabalho0">Local de trabalho (cadeiras) <input type="checkbox" class="inline" id="local-trabalho0" name="local-trabalho0" value="3"></label>
+                <label for="local-trabalho1" name="local-trabalho1">Local de trabalho (mesas) <input type="checkbox" class="inline" id="local-trabalho1" name="local-trabalho1" value="4"></label>
+                <label for="estacionamento" name="estacionamento">Estacionamento <input type="checkbox" class="inline" id="estacionamento" name="estacionamento" value="5"></label>
+                <label for="cafe" name="cafe">Café/Biscoitos <input type="checkbox" class="inline" id="cafe" name="cafe" value="6"></label>
+                <label for="tamanho-equipe" name="tamanho-equipe">Tamanho da equipe <input type="checkbox" class="inline" id="tamanho-equipe" name="tamanho-equipe" value="7"></label>
+            </fieldset>
+        </div>
+        <div class="coment">
+            <fieldset>
+                <legend>Mais alguma proposta de melhoria?</legend>
+                <label for="comentario" name="comentario"><textarea name="comentario" id="comentario" placeholder="Adicione aqui as suas idéias" rows="3" cols="40"></textarea></label>
+                </fieldset>
+            <button id="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
