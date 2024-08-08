@@ -67,16 +67,12 @@ input, textarea, select {
 }
 
 #check label {
-    display: block;
+    content: "";
     font: 18px;
-    width: unset;
-    margin: 0 0.5em 0 0;
-}
-
-#check label input {
-    float: left;
-    margin: 0;
+    display: inline-block;
     vertical-align: middle;
+    height: 50px;
+    margin: 0 auto;    
 }
 
 .coment {
