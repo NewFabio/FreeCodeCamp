@@ -112,6 +112,7 @@ a {
   
   li {
     margin: 16px 0;
+    list-style: circle;
   }
   
   
